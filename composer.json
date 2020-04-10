@@ -1,0 +1,29 @@
+{
+	"name": "nikosdion/joomlasvg",
+	"description": "SVG Support for Joomla! 3",
+	"keywords": [
+		"svg",
+		"joomla"
+	],
+	"type": "project",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://github.com/nikosdion/joomlasvg",
+	"authors": [
+		{
+			"name": "Nicholas K. Dionysopoulos",
+			"email": "nicholas_NO_SPAM_PLEASE@dionysopoulos.me",
+			"homepage": "http://www.dionysopoulos.me",
+			"role": "Lead Developer"
+		}
+	],
+	"config": {
+		"vendor-dir": "plugins/system/joomlasvg/vendor"
+	},
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=7.1.0",
+		"ext-json": "*",
+		"enshrined/svg-sanitize": "^0.13.3",
+		"ext-fileinfo": "*"
+	}
+}
