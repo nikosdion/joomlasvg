@@ -73,3 +73,6 @@ fabric.properties
 
 ### Composer
 /plugins/system/joomlasvg/vendor/**
+
+### Extension installation file
+plg_system_joomlasvg.zip
