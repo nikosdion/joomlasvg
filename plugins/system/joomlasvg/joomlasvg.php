@@ -143,6 +143,12 @@ class plgSystemJoomlasvg extends CMSPlugin
 			$this->patchMediaHelper();
 		}
 
+		// This patches BannerHelper to add SVG support to Banners.
+		if (!class_exists('BannerHelper', false))
+		{
+			$this->patchBannerHelper();
+		}
+
 		// Patch com_media options to allow uploading of SVG files
 		try
 		{
@@ -243,5 +249,20 @@ PHP;
 		$allComponents['com_media'] = $comMedia;
 
 		$prop->setValue($allComponents);
+	}
+
+	private function patchBannerHelper()
+	{
+		$source           = JPATH_SITE . '/components/com_banners/helpers/banner.php';
+
+		$phpContent = file_get_contents($source);
+		$phpContent = str_replace('|png)', "|png|svg)", $phpContent);
+
+		BufferStreamHandler::stream_register();
+
+		$bufferLocation = 'plgSystemJoomlaSVGBuffer://plgSystemJoomlaSVGBannerHelper.php';
+
+		file_put_contents($bufferLocation, $phpContent);
+		require_once $bufferLocation;
 	}
 }
