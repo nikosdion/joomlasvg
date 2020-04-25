@@ -104,7 +104,7 @@ class plgSystemJoomlasvg extends CMSPlugin
 	 */
 	private static function isSVG(string $intendedName, string $tempPath): bool
 	{
-		if (strtolower(substr($intendedName, -4)) === '.svg')
+		if (strtolower(substr($intendedName, -4)) !== '.svg')
 		{
 			return true;
 		}
