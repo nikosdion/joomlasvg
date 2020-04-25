@@ -7,7 +7,7 @@
 
 <extension version="3.8.0" type="plugin" group="system" method="upgrade">
 	<name>PLG_SYSTEM_JOOMLASVG</name>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<creationDate>2020-04-10</creationDate>
 
 	<author>Nicholas K. Dionysopoulos</author>
