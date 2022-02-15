@@ -23,7 +23,7 @@
 	"require": {
 		"php": ">=7.1.0",
 		"ext-json": "*",
-		"enshrined/svg-sanitize": "^0.13.3",
+		"enshrined/svg-sanitize": "^0.15.0",
 		"ext-fileinfo": "*"
 	}
 }
