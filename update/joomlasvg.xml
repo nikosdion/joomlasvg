@@ -1,0 +1,40 @@
+<!--
+  ~ @package   JoomlaSVGSupport
+  ~ @copyright Copyright (c)2020-2022 Nicholas K. Dionysopoulos
+  ~ @license   GNU General Public License version 3, or later
+  -->
+
+<!-- Dark Magic update provisioning XML stream -->
+<updates>
+    <update>
+        <version>2.0.0</version>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/nikosdion/joomlasvg/releases/download/2.0.0/plg_system_joomlasvg-2.0.0.zip</downloadurl>
+        </downloads>
+        <infourl title="Dark Magic Release Notes">https://github.com/nikosdion/joomlasvg/releases/download/2.0.0</infourl>
+
+        <targetplatform name="joomla" version="4.0"/>
+
+        <php_minimum>7.2.0</php_minimum>
+
+        <ars-phpcompat version="7.2"/>
+        <ars-phpcompat version="7.3"/>
+        <ars-phpcompat version="7.4"/>
+        <ars-phpcompat version="8.0"/>
+        <ars-phpcompat version="8.1"/>
+        <ars-phpcompat version="8.2"/>
+
+        <name>Joomla SVG Support</name>
+        <description>A simple plugin which adds SVG support to Joomla 4.</description>
+        <element>plg_system_joomlasvg</element>
+        <type>plugin</type>
+        <maintainer>Nicholas K. Dionysopoulos</maintainer>
+        <maintainerurl>https://www.dionysopoulos.me</maintainerurl>
+        <section>Updates</section>
+        <client>0</client>
+    </update>
+</updates>

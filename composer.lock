@@ -4,55 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbb7f334254d8ae464ce8e7427c872e7",
-    "packages": [
-        {
-            "name": "enshrined/svg-sanitize",
-            "version": "0.15.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "17e12ba9c2881caa6b167d0fbea555c11207fbb0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/17e12ba9c2881caa6b167d0fbea555c11207fbb0",
-                "reference": "17e12ba9c2881caa6b167d0fbea555c11207fbb0",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "php": "^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "^0.1.2",
-                "phpunit/phpunit": "^6.5 || ^8.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "enshrined\\svgSanitize\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Daryll Doyle",
-                    "email": "daryll@enshrined.co.uk"
-                }
-            ],
-            "description": "An SVG sanitizer for PHP",
-            "support": {
-                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
-                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.0"
-            },
-            "time": "2022-02-13T00:42:56+00:00"
-        }
-    ],
+    "content-hash": "ec6ce82d72358fd3f9345b36bba8b9d8",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
@@ -60,10 +13,13 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1.0",
+        "php": ">=7.2.0",
         "ext-json": "*",
         "ext-fileinfo": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "platform-overrides": {
+        "php": "7.2.0"
+    },
+    "plugin-api-version": "2.3.0"
 }

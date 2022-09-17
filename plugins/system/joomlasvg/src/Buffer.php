@@ -5,12 +5,14 @@
  * @license   GNU General Public License version 3, or later
  */
 
+namespace Joomla\Plugin\System\Joomlasvg;
+
 defined('_JEXEC') or die;
 
 /**
- * Registers a fof:// stream wrapper
+ * Registers a plgSystemJoomlaSVGBuffer:// stream wrapper
  */
-class plgSystemJoomlaSVGBuffer
+class Buffer
 {
 	/**
 	 * Buffer hash
@@ -213,6 +215,8 @@ class plgSystemJoomlaSVGBuffer
 	 */
 	public function stream_write($data)
 	{
+		static::$buffers[$this->name] = static::$buffers[$this->name] ?? '';
+
 		$left                         = substr(static::$buffers[$this->name], 0, $this->position);
 		$right                        = substr(static::$buffers[$this->name], $this->position + strlen($data));
 		static::$buffers[$this->name] = $left . $data . $right;
@@ -308,7 +312,7 @@ class plgSystemJoomlaSVGBuffer
 	}
 }
 
-if (plgSystemJoomlaSVGBuffer::canRegisterWrapper())
+if (Buffer::canRegisterWrapper())
 {
-	stream_wrapper_register('plgSystemJoomlaSVGBuffer', 'plgSystemJoomlaSVGBuffer');
+	stream_wrapper_register('plgSystemJoomlaSVGBuffer', Buffer::class);
 }
