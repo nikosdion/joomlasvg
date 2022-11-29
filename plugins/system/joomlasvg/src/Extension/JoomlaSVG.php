@@ -40,7 +40,7 @@ class JoomlaSVG extends CMSPlugin implements SubscriberInterface
 	{
 		if (strtolower(substr($filePath, -4)) !== '.svg')
 		{
-			return true;
+			return false;
 		}
 
 		if (!function_exists('mime_content_type'))
